@@ -3,9 +3,9 @@ import './App.css'
 import {Navbar} from './components/Navbar'
 import {Auth} from './pages/auth/index'
 import {Home} from './pages/home/index'
-/*import {Movie} from './pages/movie/index'
+import {Movie} from './pages/movie/index'
 import {TvShow} from './pages/tvshow/index'
-import {Rated} from './pages/rated/index'*/
+import {Rated} from './pages/rated/index'
 function App(){
   return (
     <div>
@@ -14,9 +14,9 @@ function App(){
         <Routes>
           <Route path="/Movie-Rating-App" element={<Home/>}/>
           <Route path="/Movie-Rating-App/auth" element={<Auth/>}/>
-          {/*<Route path="/Movie-Rating-App/rated" element={<Rated/>}/>
+          <Route path="/Movie-Rating-App/rated" element={<Rated/>}/>
           <Route path="/Movie-Rating-App/movies/:id" element={<Movie/>}/>
-          <Route path="/Movie-Rating-App/tvshows/:id" element={<TvShow/>}/>*/}
+          <Route path="/Movie-Rating-App/tvshows/:id" element={<TvShow/>}/>
         </Routes>
       </Router>
     </div>
