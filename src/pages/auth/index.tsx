@@ -10,5 +10,5 @@ export const Auth = () => {
     localStorage.setItem("guest_session_id",data.guest_session_id);
     navigate("/Movie-Rating-App");
   }  
-  return(<Grid textAlign="center" verticalAlign="middle" style={{height:"100vh"}}><Grid.Column style={{maxWidth:"450px"}}><Header as="h2" color="violet" textAlign="center">Login as a Guest</Header><Form size="large"><Segment stacked><Button color="violet" size="large" fluid onClick={handleLogin}>Login</Button><div>{localStorage.getItem("guest_session_id")}</div></Segment></Form></Grid.Column></Grid>)
+  return(<Grid textAlign="center" verticalAlign="middle" style={{height:"100vh"}}><Grid.Column style={{maxWidth:"450px"}}><Header as="h2" color="teal" textAlign="center">Login as a Guest</Header><Form size="large"><Segment stacked><Button color="teal" size="large" fluid onClick={handleLogin}>Login</Button><div>{localStorage.getItem("guest_session_id")}</div></Segment></Form></Grid.Column></Grid>)
 }
