@@ -11,8 +11,8 @@ export const Navbar = () => {
     <Menu fixed="top" size="huge">
       
 <Menu.Item as={Link} to="/Movie-Rating-App" style={{fontSize:"1.2rem"}}>Home</Menu.Item>
-      {/*<Menu.Item as={Link} to="/Movie-Rating-App/rated" style={{fontSize:"1.2rem"}}>Rated</Menu.Item>
-   */ }  <Menu.Menu position="right">
+      <Menu.Item as={Link} to="/Movie-Rating-App/rated" style={{fontSize:"1.2rem"}}>Rated</Menu.Item>
+    <Menu.Menu position="right">
         {isLoggedIn?(<Menu.Item as={Button} style={{fontSize:"1.2rem"}} onClick={handleLogout}>Logout</Menu.Item> ):(
 <Menu.Item as={Link} to="/Movie-Rating-App/auth" style={{fontSize:"1.2rem"}}>Auth</Menu.Item>)}</Menu.Menu>
     </Menu>
